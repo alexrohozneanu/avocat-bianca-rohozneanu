@@ -6,9 +6,11 @@ Site static bilingv (RO/EN): HTML + CSS, fără build, fără JavaScript.
 
 - `index.html` — pagina în română (implicită)
 - `en/index.html` — pagina în engleză
+- `multumim.html` / `en/thank-you.html` — paginile de confirmare după trimiterea formularului
 - `css/style.css` — stilurile comune
 - `fonts/` — fonturi servite local (Playfair Display, Source Sans 3)
 - `img/` — imagini
+- `favicon.svg` — iconița site-ului
 
 ## Rulare locală
 
