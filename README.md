@@ -21,10 +21,10 @@ python3 -m http.server 8321
 
 Tot textul provizoriu este marcat în HTML cu comentariul `<!-- PROVIZORIU -->`
 pe rândul de deasupra. Caută `PROVIZORIU` în `index.html` și `en/index.html`
-și înlocuiești textul de sub fiecare marcaj (biografie, telefon, email,
+și înlocuiește textul de sub fiecare marcaj (biografie, telefon, email,
 adresă, poză). După înlocuire, șterge comentariul.
 
-Poza de profil: înlocuiești `img/portret-placeholder.svg` cu o fotografie
+Poza de profil: înlocuiește `img/portret-placeholder.svg` cu o fotografie
 reală (ex. `img/portret.jpg`, ~440×520px) și actualizează atributul `src`
 în ambele pagini.
 
