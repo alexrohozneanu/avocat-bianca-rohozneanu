@@ -70,7 +70,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.2; }
 
 img { max-width: 100%; display: block; }
 
-a { color: var(--gold); }
+a { color: var(--navy); text-decoration-color: var(--gold); }
 
 /* Header / nav */
 .site-header {
@@ -205,6 +205,7 @@ a { color: var(--gold); }
   padding: 2rem 1.5rem;
 }
 .card h3 { color: var(--navy); font-size: 1.25rem; margin-bottom: 0.75rem; }
+.card-icon { color: var(--gold); margin-bottom: 0.75rem; }
 
 /* Contact */
 .contact-grid {
@@ -234,6 +235,8 @@ a { color: var(--gold); }
 .contact-form .btn { margin-top: 1.5rem; }
 .contact-info h3 { color: var(--navy); font-size: 1.2rem; margin: 1.25rem 0 0.25rem; }
 .contact-info p a { color: var(--navy); }
+
+.hidden { display: none; }
 
 /* Footer */
 .site-footer {

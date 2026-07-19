@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Avocat Bianca Rohozneanu — Cabinet de avocatură Cluj-Napoca</title>
   <meta name="description" content="Avocat Bianca Rohozneanu — consultanță și reprezentare juridică în drept civil, drept comercial și dreptul familiei, în Cluj-Napoca.">
-  <link rel="alternate" hreflang="ro" href="/">
-  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="ro" href="https://avocatbiancarohozneanu.netlify.app/">
+  <link rel="alternate" hreflang="en" href="https://avocatbiancarohozneanu.netlify.app/en/">
+  <link rel="alternate" hreflang="x-default" href="https://avocatbiancarohozneanu.netlify.app/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -57,16 +59,32 @@
       <hr class="rule">
       <div class="cards">
         <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="3" x2="12" y2="19"/>
+            <line x1="5" y1="7" x2="19" y2="7"/>
+            <path d="M5 7 2 14a3.5 3.5 0 0 0 6 0z"/>
+            <path d="M19 7 16 14a3.5 3.5 0 0 0 6 0z"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+          </svg>
           <h3>Drept civil</h3>
           <!-- PROVIZORIU -->
           <p>Consultanță și reprezentare în litigii civile: contracte, răspundere civilă, proprietate, revendicări și recuperări de creanțe.</p>
         </article>
         <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="7" width="20" height="13" rx="2"/>
+            <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+            <line x1="2" y1="13" x2="22" y2="13"/>
+          </svg>
           <h3>Drept comercial</h3>
           <!-- PROVIZORIU -->
           <p>Asistență juridică pentru societăți: redactarea și negocierea contractelor comerciale, litigii între profesioniști, relații cu partenerii de afaceri.</p>
         </article>
         <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z"/>
+            <path d="M12 16s-3.5-2.2-3.5-4.8a2.2 2.2 0 0 1 3.5-1.7 2.2 2.2 0 0 1 3.5 1.7c0 2.6-3.5 4.8-3.5 4.8z"/>
+          </svg>
           <h3>Dreptul familiei</h3>
           <!-- PROVIZORIU -->
           <p>Divorț, exercitarea autorității părintești, pensie de întreținere și partaj — situații sensibile, tratate cu discreție și empatie.</p>
@@ -80,7 +98,8 @@
       <h2 class="section-title">Contact</h2>
       <hr class="rule">
       <div class="contact-grid">
-        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/multumim.html">
+          <p class="hidden"><label>Nu completa: <input name="bot-field"></label></p>
           <input type="hidden" name="form-name" value="contact">
           <label for="nume">Nume</label>
           <input id="nume" name="nume" type="text" required autocomplete="name">
