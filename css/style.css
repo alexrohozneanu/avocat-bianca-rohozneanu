@@ -312,16 +312,6 @@ a { color: var(--ink); text-decoration-color: var(--gold); }
 }
 .tl-item h3 { font-family: var(--display); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.25rem; }
 .tl-item p { color: var(--ink-soft); }
-.chips { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
-.chip {
-  background: var(--sand-2);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--ink);
-}
 
 /* Contact */
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
