@@ -234,17 +234,7 @@ a { color: var(--ink); text-decoration-color: var(--gold); }
   max-width: 34rem;
   margin-bottom: 2.25rem;
 }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem; }
-.hero-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.95rem;
-  color: var(--ink-soft);
-  border-top: 1px solid var(--line);
-  padding-top: 1.5rem;
-}
-.hero-meta .star { color: var(--gold); letter-spacing: 0.1em; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 
 /* Hero info card (replaces testimonials) */
 .hero-card {
