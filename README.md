@@ -1,6 +1,7 @@
-# Avocat Bianca Rohozneanu — site de prezentare
+# Cabinet de Avocat Rohozneanu Bianca-Alexandra — site de prezentare
 
 Site static bilingv (RO/EN): HTML + CSS, fără build, fără JavaScript.
+Design cald (crem/nisip + auriu + antracit), găzduit pe Netlify.
 
 ## Structură
 
@@ -8,8 +9,7 @@ Site static bilingv (RO/EN): HTML + CSS, fără build, fără JavaScript.
 - `en/index.html` — pagina în engleză
 - `multumim.html` / `en/thank-you.html` — paginile de confirmare după trimiterea formularului
 - `css/style.css` — stilurile comune
-- `fonts/` — fonturi servite local (Playfair Display, Source Sans 3)
-- `img/` — imagini
+- `fonts/` — fonturi servite local (Archivo, Playfair Display italic, Source Sans 3)
 - `favicon.svg` — iconița site-ului
 
 ## Rulare locală
@@ -21,14 +21,14 @@ python3 -m http.server 8321
 
 ## Cum actualizezi conținutul
 
-Tot textul provizoriu este marcat în HTML cu comentariul `<!-- PROVIZORIU -->`
-pe rândul de deasupra. Caută `PROVIZORIU` în `index.html` și `en/index.html`
-și înlocuiește textul de sub fiecare marcaj (biografie, telefon, email,
-adresă, poză). După înlocuire, șterge comentariul.
+Textul, datele de contact și cele opt domenii de practică sunt scrise direct
+în `index.html` (română) și `en/index.html` (engleză). Caută secțiunea pe
+care vrei s-o modifici (`<section id="despre">`, `id="domenii">`, `id="contact">`
+etc.) și editează textul. Orice modificare în engleză trebuie făcută și în
+pagina română, și invers.
 
-Poza de profil: înlocuiește `img/portret-placeholder.svg` cu o fotografie
-reală (ex. `img/portret.jpg`, ~440×520px) și actualizează atributul `src`
-în ambele pagini.
+Fotografie de profil: designul actual folosește un card cu repere în locul
+unei poze. Dacă vrei să adaugi o fotografie, spune și o integrăm.
 
 ## Publicare
 
