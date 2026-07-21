@@ -15,8 +15,18 @@
   </url>
   <url>
     <loc>https://avocatbiancarohozneanu.netlify.app/termeni.html</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatbiancarohozneanu.netlify.app/termeni.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatbiancarohozneanu.netlify.app/en/terms.html"/>
   </url>
   <url>
     <loc>https://avocatbiancarohozneanu.netlify.app/confidentialitate.html</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatbiancarohozneanu.netlify.app/confidentialitate.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatbiancarohozneanu.netlify.app/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://avocatbiancarohozneanu.netlify.app/en/terms.html</loc>
+  </url>
+  <url>
+    <loc>https://avocatbiancarohozneanu.netlify.app/en/privacy.html</loc>
   </url>
 </urlset>
