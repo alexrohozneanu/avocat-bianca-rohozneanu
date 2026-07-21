@@ -356,6 +356,22 @@ a { color: var(--ink); text-decoration-color: var(--gold); }
 .simple-hero h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); margin-bottom: 1rem; }
 .simple-hero p { color: var(--ink-soft); font-size: 1.15rem; max-width: 34rem; margin: 0 auto 2rem; }
 
+/* Legal / document pages */
+.legal { max-width: 48rem; margin: 0 auto; padding: 4rem 0; }
+.legal h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: 0.4rem; }
+.legal .updated { color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 2.5rem; }
+.legal h2 { font-size: 1.2rem; margin: 2.25rem 0 0.6rem; }
+.legal p { color: var(--ink-soft); margin-bottom: 0.8rem; }
+.legal ul { margin: 0 0 1rem 1.35rem; color: var(--ink-soft); }
+.legal li { margin-bottom: 0.35rem; }
+.legal a { color: var(--ink); font-weight: 600; }
+.legal .back { display: inline-block; margin-top: 2.5rem; }
+
+/* Footer legal link */
+.site-footer .foot-links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.site-footer .foot-links a { text-decoration: none; font-size: 0.85rem; }
+.site-footer .foot-links a:hover { color: var(--sand); }
+
 /* ---- Responsive ---- */
 @media (max-width: 60rem) {
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; padding: 3.5rem 0 4rem; }
