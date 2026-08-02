@@ -285,18 +285,6 @@ a { color: var(--ink); text-decoration-color: var(--gold); }
 .card h3 { font-family: var(--display); font-weight: 700; font-size: 1.2rem; margin-bottom: 0.6rem; }
 .card p { color: var(--ink-soft); font-size: 0.98rem; line-height: 1.6; }
 
-/* Experience / timeline */
-.timeline { display: grid; gap: 1.25rem; max-width: 46rem; }
-.tl-item {
-  background: var(--ivory);
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--gold);
-  border-radius: 0 0.9rem 0.9rem 0;
-  padding: 1.4rem 1.6rem;
-}
-.tl-item h3 { font-family: var(--display); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.25rem; }
-.tl-item p { color: var(--ink-soft); }
-
 /* Contact */
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
 .contact-info h3 { font-family: var(--display); font-weight: 700; font-size: 1.1rem; margin: 1.25rem 0 0.2rem; }
