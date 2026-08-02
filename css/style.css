@@ -236,33 +236,17 @@ a { color: var(--ink); text-decoration-color: var(--gold); }
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 
-/* Hero info card (replaces testimonials) */
-.hero-card {
-  background: var(--ivory);
-  border: 1px solid var(--line);
+/* Hero photo (replaces testimonials / info card) */
+.hero-photo-wrap { display: flex; justify-content: center; }
+.hero-photo {
+  width: 100%;
+  max-width: 24rem;
+  height: auto;
   border-radius: 1.25rem;
-  padding: 2rem;
-  box-shadow: 0 30px 60px -35px rgba(60, 45, 20, 0.45);
+  border: 1px solid var(--line);
+  box-shadow: 0 34px 70px -38px rgba(60, 45, 20, 0.55);
+  object-fit: cover;
 }
-.hero-card h2 {
-  font-size: 0.8rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.25rem;
-}
-.hero-card dl { display: grid; gap: 1.1rem; }
-.hero-card dt {
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin-bottom: 0.15rem;
-}
-.hero-card dd { font-family: var(--display); font-weight: 700; font-size: 1.05rem; color: var(--ink); }
-.hero-card dd span { display: block; font-family: var(--sans); font-weight: 400; font-size: 0.95rem; color: var(--ink-soft); }
 
 /* ---- Sections ---- */
 .section { padding: 5rem 0; }
