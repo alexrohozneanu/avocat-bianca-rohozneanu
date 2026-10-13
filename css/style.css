@@ -329,7 +329,7 @@ a { color: var(--ink); text-decoration-color: var(--gold); }
 .simple-hero p { color: var(--ink-soft); font-size: 1.15rem; max-width: 34rem; margin: 0 auto 2rem; }
 
 /* Legal / document pages */
-.legal { max-width: 48rem; margin: 0 auto; padding: 4rem 0; }
+.legal { max-width: 48rem; margin: 0 auto; padding: 4rem 1.5rem; }
 .legal h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: 0.4rem; }
 .legal .updated { color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 2.5rem; }
 .legal h2 { font-size: 1.2rem; margin: 2.25rem 0 0.6rem; }
@@ -382,7 +382,7 @@ a { color: var(--ink); text-decoration-color: var(--gold); }
 .post-card p { color: var(--ink-soft); line-height: 1.6; }
 
 /* Article */
-.post { max-width: 48rem; margin: 0 auto; padding: 4rem 0; }
+.post { max-width: 48rem; margin: 0 auto; padding: 4rem 1.5rem; }
 .post .eyebrow { display: block; margin-bottom: 0.75rem; }
 .post h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: 0.75rem; }
 .post-meta {
