@@ -29,4 +29,28 @@
   <url>
     <loc>https://biancarohozneanu.ro/en/privacy.html</loc>
   </url>
+  <url>
+    <loc>https://biancarohozneanu.ro/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://biancarohozneanu.ro/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biancarohozneanu.ro/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biancarohozneanu.ro/blog/"/>
+  </url>
+  <url>
+    <loc>https://biancarohozneanu.ro/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://biancarohozneanu.ro/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biancarohozneanu.ro/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biancarohozneanu.ro/blog/"/>
+  </url>
+  <url>
+    <loc>https://biancarohozneanu.ro/blog/executarea-silita-a-pensiei-de-intretinere.html</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://biancarohozneanu.ro/blog/executarea-silita-a-pensiei-de-intretinere.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biancarohozneanu.ro/en/blog/child-support-enforcement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biancarohozneanu.ro/blog/executarea-silita-a-pensiei-de-intretinere.html"/>
+  </url>
+  <url>
+    <loc>https://biancarohozneanu.ro/en/blog/child-support-enforcement.html</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://biancarohozneanu.ro/blog/executarea-silita-a-pensiei-de-intretinere.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biancarohozneanu.ro/en/blog/child-support-enforcement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biancarohozneanu.ro/blog/executarea-silita-a-pensiei-de-intretinere.html"/>
+  </url>
 </urlset>
