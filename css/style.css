@@ -344,6 +344,81 @@ a { color: var(--ink); text-decoration-color: var(--gold); }
 .site-footer .foot-links a { text-decoration: none; font-size: 0.85rem; }
 .site-footer .foot-links a:hover { color: var(--sand); }
 
+/* ---- Blog ---- */
+.nav-links a[aria-current="page"] {
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 0.35em;
+}
+
+/* Listing */
+.post-list { list-style: none; display: grid; gap: 1.25rem; max-width: 48rem; }
+.post-card {
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 45px -30px rgba(60, 45, 20, 0.5);
+  border-color: var(--gold-light);
+}
+.post-card time {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.post-card h2 { font-size: 1.35rem; margin-bottom: 0.5rem; }
+.post-card h2 a { text-decoration: none; }
+.post-card h2 a:hover { color: var(--gold); }
+.post-card p { color: var(--ink-soft); line-height: 1.6; }
+
+/* Article */
+.post { max-width: 48rem; margin: 0 auto; padding: 4rem 0; }
+.post .eyebrow { display: block; margin-bottom: 0.75rem; }
+.post h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: 0.75rem; }
+.post-meta {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.post-body p { color: var(--ink-soft); font-size: 1.08rem; line-height: 1.7; margin-bottom: 1rem; }
+.post-body h2 { font-size: 1.4rem; margin: 2.25rem 0 0.75rem; }
+.post-body ul { margin: 0 0 1.25rem 1.35rem; color: var(--ink-soft); font-size: 1.08rem; line-height: 1.7; }
+.post-body li { margin-bottom: 0.4rem; }
+.post-body a { color: var(--ink); font-weight: 600; }
+.post-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--sand-2);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  margin-top: 3rem;
+}
+.post-cta p { font-family: var(--display); font-weight: 700; font-size: 1.15rem; }
+.post-disclaimer {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+.post .back { display: inline-block; margin-top: 2rem; }
+
 /* ---- Responsive ---- */
 @media (max-width: 60rem) {
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; padding: 3.5rem 0 4rem; }
