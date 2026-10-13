@@ -1,0 +1,100 @@
+<!--
+  ȘABLON ARTICOL BLOG — nu edita acest fișier, copiază-l.
+
+  Pași pentru un articol nou (RO):
+    1. cp docs/blog-template.html blog/SLUG.html
+    2. Înlocuiește toate cuvintele scrise cu MAJUSCULE de mai jos:
+         TITLU        titlul articolului
+         REZUMAT      1–2 propoziții, apar în listă și în meta description
+         SLUG         numele fișierului RO, litere mici, fără diacritice, cu cratime
+         SLUG-EN      numele fișierului EN
+         DATA-ISO     2026-10-13
+         DATA-TEXT    13 octombrie 2026
+       și șterge linia <meta name="robots" content="noindex"> (e doar pentru șablon).
+    3. Pune textul în <div class="post-body">. Elemente acceptate: <p>, <h2>, <ul><li>, <strong>, <a>.
+    4. Adaugă un <li class="post-card"> la începutul listei din blog/index.html
+       (copiază-l din exemplul de mai jos, după </html>).
+    5. Repetă pentru EN în en/blog/SLUG-EN.html: schimbă lang="en", textele din meniu
+       (About / Practice / Blog / Contact), lang-switch → RO, CTA și disclaimer în engleză,
+       footer în engleză (vezi en/blog/child-support-enforcement.html ca model).
+    6. Adaugă două blocuri <url> în sitemap.xml (model în README).
+-->
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>TITLU — Avocat Bianca Rohozneanu</title>
+  <meta name="description" content="REZUMAT">
+  <link rel="alternate" hreflang="ro" href="https://biancarohozneanu.ro/blog/SLUG.html">
+  <link rel="alternate" hreflang="en" href="https://biancarohozneanu.ro/en/blog/SLUG-EN.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Navigare principală">
+    <a class="nav-brand" href="/">Avocat Bianca Rohozneanu</a>
+    <ul class="nav-links">
+      <li><a href="/#despre">Despre</a></li>
+      <li><a href="/#domenii">Domenii</a></li>
+      <li><a href="/blog/" aria-current="page">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a class="lang-switch" href="/en/blog/SLUG-EN.html" lang="en" hreflang="en">EN</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <article class="post wrap">
+    <span class="eyebrow">Blog</span>
+    <h1>TITLU</h1>
+    <p class="post-meta"><time datetime="DATA-ISO">DATA-TEXT</time> · Av. Bianca Rohozneanu</p>
+
+    <div class="post-body">
+      <p>Primul paragraf.</p>
+
+      <h2>Un subtitlu</h2>
+      <p>Text.</p>
+      <ul>
+        <li>punct unu;</li>
+        <li>punct doi.</li>
+      </ul>
+    </div>
+
+    <aside class="post-cta">
+      <p>Te afli într-o situație similară?</p>
+      <a class="btn btn-primary" href="/#contact">Programează o consultație →</a>
+    </aside>
+
+    <p class="post-disclaimer">Acest articol are caracter informativ și nu reprezintă consultanță juridică. Pentru o situație concretă, contactează un avocat.</p>
+
+    <a class="btn btn-ghost back" href="/blog/">← Înapoi la articole</a>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="foot-brand">Avocat Bianca Rohozneanu</span>
+    <div class="foot-links">
+      <a href="/blog/">Blog</a>
+      <a href="/termeni.html">Termeni și condiții</a>
+      <a href="/confidentialitate.html">Politica de confidențialitate</a>
+    </div>
+    <small>© 2026 Cabinet de Avocat Rohozneanu Bianca-Alexandra · Baroul Cluj</small>
+  </div>
+</footer>
+
+</body>
+</html>
+<!--
+  Card pentru blog/index.html (pune-l primul în <ul class="post-list">):
+
+        <li class="post-card">
+          <time datetime="DATA-ISO">DATA-TEXT</time>
+          <h2><a href="/blog/SLUG.html">TITLU</a></h2>
+          <p>REZUMAT</p>
+        </li>
+-->
