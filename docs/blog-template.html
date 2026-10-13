@@ -1,23 +1,25 @@
 <!--
   ȘABLON ARTICOL BLOG — nu edita acest fișier, copiază-l.
 
-  Pași pentru un articol nou (RO):
-    1. cp docs/blog-template.html blog/SLUG.html
-    2. Înlocuiește toate cuvintele scrise cu MAJUSCULE de mai jos:
+  Articol nou, versiunea RO:
+    1. cp docs/blog-template.html blog/<slug-ro>.html
+    2. Înlocuiește (find & replace) cuvintele scrise cu MAJUSCULE:
+         SLUG-RO      numele fișierului RO, fără .html (litere mici, fără diacritice, cu cratime)
+         SLUG-EN      numele fișierului EN, fără .html (ex. child-support-enforcement)
          TITLU        titlul articolului
-         REZUMAT      1–2 propoziții, apar în listă și în meta description
-         SLUG         numele fișierului RO, litere mici, fără diacritice, cu cratime
-         SLUG-EN      numele fișierului EN
+         REZUMAT      1–2 propoziții; apar în listă și în meta description
          DATA-ISO     2026-10-13
          DATA-TEXT    13 octombrie 2026
-       și șterge linia <meta name="robots" content="noindex"> (e doar pentru șablon).
-    3. Pune textul în <div class="post-body">. Elemente acceptate: <p>, <h2>, <ul><li>, <strong>, <a>.
-    4. Adaugă un <li class="post-card"> la începutul listei din blog/index.html
-       (copiază-l din exemplul de mai jos, după </html>).
-    5. Repetă pentru EN în en/blog/SLUG-EN.html: schimbă lang="en", textele din meniu
-       (About / Practice / Blog / Contact), lang-switch → RO, CTA și disclaimer în engleză,
-       footer în engleză (vezi en/blog/child-support-enforcement.html ca model).
-    6. Adaugă două blocuri <url> în sitemap.xml (model în README).
+    3. Șterge din <head> linia care conține „robots" (e acolo doar ca Google să nu indexeze șablonul).
+    4. Șterge acest comentariu și pe cel de la finalul fișierului.
+    5. Pune textul în <div class="post-body">. Elemente acceptate: <p>, <h2>, <ul><li>, <strong>, <a>.
+
+  Versiunea EN: NU porni de la acest șablon. Copiază ultimul articol EN:
+    cp en/blog/child-support-enforcement.html en/blog/<slug-en>.html
+  și schimbă în el: <title>, meta description, cele două link-uri hreflang, link-ul RO
+  din meniu (lang-switch), titlul <h1>, data (ex. 13 October 2026) și textul din <div class="post-body">.
+
+  Listă, sitemap și verificare: vezi README, „Cum adaugi un articol pe blog".
 -->
 <!DOCTYPE html>
 <html lang="ro">
@@ -27,7 +29,7 @@
   <meta name="robots" content="noindex">
   <title>TITLU — Avocat Bianca Rohozneanu</title>
   <meta name="description" content="REZUMAT">
-  <link rel="alternate" hreflang="ro" href="https://biancarohozneanu.ro/blog/SLUG.html">
+  <link rel="alternate" hreflang="ro" href="https://biancarohozneanu.ro/blog/SLUG-RO.html">
   <link rel="alternate" hreflang="en" href="https://biancarohozneanu.ro/en/blog/SLUG-EN.html">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/style.css">
@@ -90,11 +92,19 @@
 </body>
 </html>
 <!--
-  Card pentru blog/index.html (pune-l primul în <ul class="post-list">):
+  Card RO pentru blog/index.html (pune-l primul în <ul class="post-list">):
 
         <li class="post-card">
           <time datetime="DATA-ISO">DATA-TEXT</time>
-          <h2><a href="/blog/SLUG.html">TITLU</a></h2>
+          <h2><a href="/blog/SLUG-RO.html">TITLU</a></h2>
+          <p>REZUMAT</p>
+        </li>
+
+  Card EN pentru en/blog/index.html (la fel, primul în listă; data în engleză, ex. 13 October 2026):
+
+        <li class="post-card">
+          <time datetime="DATA-ISO">DATA-TEXT</time>
+          <h2><a href="/en/blog/SLUG-EN.html">TITLU</a></h2>
           <p>REZUMAT</p>
         </li>
 -->

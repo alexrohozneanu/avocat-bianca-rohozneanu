@@ -36,23 +36,29 @@ unei poze. Dacă vrei să adaugi o fotografie, spune și o integrăm.
 
 Blogul e static: fiecare articol e un fișier HTML, lista e întreținută manual.
 
-1. Copiază șablonul: `cp docs/blog-template.html blog/<slug>.html`.
-   Slug = titlul scurt, litere mici, fără diacritice, cuvinte separate cu
+1. **RO:** copiază șablonul, `cp docs/blog-template.html blog/<slug-ro>.html`,
+   și urmează pașii din comentariul de la începutul lui (înlocuiești
+   SLUG-RO, SLUG-EN, TITLU, REZUMAT, DATA-ISO, DATA-TEXT, ștergi linia `robots`
+   și cele două comentarii, pui textul în `<div class="post-body">`).
+   Slug = titlu scurt, litere mici, fără diacritice, cuvinte despărțite cu
    cratimă (ex. `executarea-silita-a-pensiei-de-intretinere`).
-2. Deschide fișierul și urmează instrucțiunile din comentariul de la început:
-   înlocuiește TITLU, REZUMAT, SLUG, SLUG-EN, DATA-ISO, DATA-TEXT, șterge
-   linia `noindex`, pune textul în `<div class="post-body">`.
-3. Fă la fel pentru engleză în `en/blog/<slug-en>.html`, folosind
-   `en/blog/child-support-enforcement.html` ca model pentru textele din meniu,
-   CTA, disclaimer și footer.
-4. Adaugă câte un card `<li class="post-card">` la **începutul** listei din
-   `blog/index.html` și `en/blog/index.html` (modelul e la finalul șablonului).
-5. Adaugă în `sitemap.xml`, înainte de `</urlset>`, două blocuri `<url>` (RO și EN),
-   copiind blocurile existente pentru `child-support-enforcement.html` și
-   schimbând adresele.
+2. **EN:** nu porni de la șablon, copiază ultimul articol EN:
+   `cp en/blog/child-support-enforcement.html en/blog/<slug-en>.html`, apoi
+   schimbă `<title>`, meta description, cele două link-uri `hreflang`,
+   link-ul RO din meniu, `<h1>`, data (ex. `13 October 2026`) și textul.
+3. **Liste:** adaugă câte un card `<li class="post-card">` la **începutul**
+   listei din `blog/index.html` (card RO) și `en/blog/index.html` (card EN).
+   Modelele sunt în comentariul de la finalul șablonului.
+4. **Sitemap:** în `sitemap.xml`, înainte de `</urlset>`, copiază cele două
+   blocuri `<url>` ale ultimului articol (RO și EN) și schimbă adresele.
+5. **Verificare înainte de push:**
 
-Verificare rapidă: `python3 -m http.server 8321`, deschide
-`http://localhost:8321/blog/` și articolul nou, apasă butonul EN/RO din meniu.
+   ```bash
+   grep -n 'noindex\|SLUG\|TITLU\|REZUMAT\|DATA-' blog/<slug-ro>.html en/blog/<slug-en>.html
+   ```
+
+   trebuie să nu afișeze nimic. Apoi `python3 -m http.server 8321`, deschide
+   `http://localhost:8321/blog/` și cele două articole și apasă butonul EN/RO din meniu.
 
 ## Publicare
 
